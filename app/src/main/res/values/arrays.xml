@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="tablayout_array" >
+        <item>热点</item>
+        <item>军事</item>
+        <item>科技</item>
+        <item>娱乐</item>
+        <item>收藏</item>
+        <item>新闻</item>
+        <item>段子</item>
+        <item>实事</item>
+        <item>生活</item>
+    </array>
+</resources>

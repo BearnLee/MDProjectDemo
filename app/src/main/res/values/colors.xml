@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="activity_bg">#F9F9F9</color>
+
+    <color name="color_titlebar">#FF4081</color>
+
+    <!--白色-->
+    <color name="color_white">#FFFFFF</color>
+
+    <color name="color_light_gray2">#FFDAD4D4</color>
+    <!-- 绿色-->
+    <color name="color_green">#59b454</color>
+    <!-- 灰色-->
+    <color name="color_light_gray">#666666</color>
+    <!-- 浅灰色-->
+    <color name="color_gray">#c4c4c4</color>
+
+    <!-- 默认activity背景色-->
+    <color name="color_activity_default_bg">#f3f3f3</color>
+    <!-- 红色-->
+    <color name="color_red">#b90000</color>
+
+    <color name="color_light_red">#bc2627</color>
+
+    <!-- 黑色-->
+    <color name="color_black">#333333</color>
+    <!--灰色线 -->
+    <color name="color_gray_line">#14000000</color>
+
+    <color name="color_toastbg">#f5f5f5</color>
+    <color name="color_light_white">#fcfcfc</color>
+
+    <color name="tv_compelte_pre">#e6e6e6</color>
+    <color name="tv_compelte_prea">#ffffff</color>
+    <color name="tv_compelte_normal">#f7f7f7</color>
+
+    <color name="set_top">#d7d7d7</color>
+
+
+    <color name="material_blue_500">#009688</color>
+    <color name="material_blue_700">#00796B</color>
+    <color name="material_green_A200">#FD87A9</color>
+</resources>
