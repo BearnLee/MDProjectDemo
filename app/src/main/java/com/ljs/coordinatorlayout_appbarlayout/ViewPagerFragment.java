@@ -53,12 +53,12 @@ public class ViewPagerFragment extends Fragment{
                 .setmOnItemClickListener(new MyRecyclerViewAdpter.OnItemClickListener() {
                     @Override
                     public void onItemClick(View view, int position) {
-                        ToastManager.getTostManager().showToast("onItemClick"+view.getClass()+position);
+                        ToastManager.getInstance().show("onItemClick"+view.getClass()+position);
                     }
 
                     @Override
                     public void onItemLongClick(View view, int position) {
-                        ToastManager.getTostManager().showToast("onItemLongClick"+view.getClass()+position);
+                        ToastManager.getInstance().show("onItemLongClick"+view.getClass()+position);
                     }
                 }));
         return view;

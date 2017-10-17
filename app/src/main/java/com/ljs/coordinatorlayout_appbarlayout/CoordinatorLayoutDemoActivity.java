@@ -170,19 +170,19 @@ public class CoordinatorLayoutDemoActivity extends AppCompatActivity{
                 int id = item.getItemId();
                 switch (id){
                     case R.id.action_common:
-                        ToastManager.getTostManager().showToast("点击了收藏");
+                        ToastManager.getInstance().show("点击了收藏");
                         break;
                     case R.id.action_menu:
-                        ToastManager.getTostManager().showToast("点击了相册");
+                        ToastManager.getInstance().show("点击了相册");
                         break;
                     case R.id.action_weixin:
-                        ToastManager.getTostManager().showToast("点击了微信");
+                        ToastManager.getInstance().show("点击了微信");
                         break;
                     case R.id.action_qq:
-                        ToastManager.getTostManager().showToast("点击了QQ");
+                        ToastManager.getInstance().show("点击了QQ");
                         break;
                     case R.id.action_transform:
-                        ToastManager.getTostManager().showToast("点击了文件");
+                        ToastManager.getInstance().show("点击了文件");
                         break;
                     default:
                         break;
