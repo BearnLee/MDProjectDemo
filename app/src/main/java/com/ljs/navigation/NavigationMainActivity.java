@@ -85,13 +85,13 @@ public class NavigationMainActivity extends AppCompatActivity{
                 int id = item.getItemId();
 
                 switch (id){
-                    case R.id.menu_item1:
+                    case R.id.menu_add:
                         Toast.makeText(XApplication.getContext(),
-                                "menu_item1 is clicked",Toast.LENGTH_SHORT).show();
+                                "menu_add is clicked",Toast.LENGTH_SHORT).show();
                         break;
-                    case R.id.menu_item2:
+                    case R.id.menu_delete:
                         Toast.makeText(XApplication.getContext(),
-                                "menu_item2 is clicked",Toast.LENGTH_SHORT).show();
+                                "menu_delete is clicked",Toast.LENGTH_SHORT).show();
                         break;
                 }
                 return true;

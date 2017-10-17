@@ -57,14 +57,16 @@ public class DividerItemGridLayout extends RecyclerView.ItemDecoration {
 
     private void drawVertical(Canvas c, RecyclerView parent) {
         final int childCount = parent.getChildCount();
+        final int spanCount = getSpanCount(parent);
         for (int i = 0; i < childCount; i++) {
 
             final View child = parent.getChildAt(i);
 
             //remove the rightmost divider
             //verion 1.1 update
-//
-            if((parent.getChildViewHolder(child).getAdapterPosition() + 1) % getSpanCount(parent)==0){
+            int adapterPosition = parent.getChildLayoutPosition(child);
+
+            if((parent.getChildViewHolder(child).getAdapterPosition() + 1) % spanCount == 0){
                 continue;
             }
 
@@ -120,6 +122,7 @@ public class DividerItemGridLayout extends RecyclerView.ItemDecoration {
     @Override
     public void onDraw(Canvas c, RecyclerView parent, RecyclerView.State state) {
         super.onDraw(c, parent, state);
+        Log.i("HEHE","onDraw");
         drawHorizontal(c, parent);
         drawVertical(c, parent);
     }

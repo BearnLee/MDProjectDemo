@@ -10,4 +10,8 @@ public class IObject implements Serializable{
     public int id;
     public String name;
     public int    icon;
+
+    public IObject(int id){
+        this.id = id;
+    }
 }

@@ -26,13 +26,16 @@ import java.util.List;
  */
 
 public class ViewPagerFragment extends Fragment{
+    private List<IObject> mList;
+    private MyRecyclerViewAdpter mMyRecyclerViewAdpter;
+    private RecyclerView mRecyclerView;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View view = LayoutInflater.from(getActivity()).inflate(R.layout.fragment_tablayout_viewpager,
                 null,false);
-        RecyclerView mRecyclerView = view.findViewById(R.id.recyclerView);
+        mRecyclerView = view.findViewById(R.id.recyclerView);
 
 //        mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.VERTICAL));
 //        mRecyclerView.addItemDecoration(new DividerItemGridLayout.Builder(getContext())
@@ -49,7 +52,7 @@ public class ViewPagerFragment extends Fragment{
 //        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 //        mRecyclerView.addItemDecoration(new DividerItemLinearLayoutDecoration(getActivity(),
 //                LinearLayoutManager.VERTICAL));
-        mRecyclerView.setAdapter(new MyRecyclerViewAdpter(getDataList())
+        mRecyclerView.setAdapter(mMyRecyclerViewAdpter = new MyRecyclerViewAdpter(getDataList())
                 .setmOnItemClickListener(new MyRecyclerViewAdpter.OnItemClickListener() {
                     @Override
                     public void onItemClick(View view, int position) {
@@ -65,12 +68,20 @@ public class ViewPagerFragment extends Fragment{
     }
 
     private List<IObject> getDataList(){
-        List<IObject> list = new ArrayList<>();
+        mList = new ArrayList<>();
         for(int i = 0;i<30;i++){
-            IObject io = new IObject();
-            io.id = i;
-            list.add(io);
+            IObject io = new IObject(i);
+            mList.add(io);
         }
-        return list;
+        return mList;
     }
+
+    public void addData(int position,IObject io){
+        mMyRecyclerViewAdpter.addData(position,io);
+    }
+
+    public void deleteData(int position){
+        mMyRecyclerViewAdpter.deleteData(position);
+    }
+
 }

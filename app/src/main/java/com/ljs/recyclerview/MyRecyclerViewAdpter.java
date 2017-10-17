@@ -8,6 +8,9 @@ import android.widget.TextView;
 
 import com.ljs.sumery.IObject;
 import com.ljs.sumery.R;
+
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -77,8 +80,24 @@ public class MyRecyclerViewAdpter extends RecyclerView.Adapter<MyRecyclerViewAdp
         }
     }
 
-    public static interface OnItemClickListener{
-        public void onItemClick(View view,int position);
-        public void onItemLongClick(View view,int position);
+    public void addData(int position,IObject iObject){
+        if(mList == null){
+            mList = new ArrayList<>();
+        }
+        mList.add(position,iObject);
+        notifyDataSetChanged();
+    }
+
+    public void deleteData(int position){
+        if(mList == null || mList.size() == 0){
+            return;
+        }
+        mList.remove(position);
+        notifyDataSetChanged();
+    }
+
+    public interface OnItemClickListener{
+        void onItemClick(View view,int position);
+        void onItemLongClick(View view,int position);
     }
 }

@@ -24,6 +24,7 @@ import android.widget.Toast;
 
 import com.ljs.application.XApplication;
 import com.ljs.navigation.NavigationMainActivity;
+import com.ljs.sumery.IObject;
 import com.ljs.sumery.R;
 import com.ljs.utils.SystemUtils;
 import com.ljs.utils.ToastManager;
@@ -48,6 +49,7 @@ public class CoordinatorLayoutDemoActivity extends AppCompatActivity{
     private String mTitles[];
     private List<ViewPagerFragment> mPages = new ArrayList<>();
     private ActionBarDrawerToggle toggle;
+    private int count = 30;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -151,13 +153,12 @@ public class CoordinatorLayoutDemoActivity extends AppCompatActivity{
                 int id = item.getItemId();
 
                 switch (id){
-                    case R.id.menu_item1:
-                        Toast.makeText(CoordinatorLayoutDemoActivity.this,
-                                "menu_item1 is clicked",Toast.LENGTH_SHORT).show();
+                    case R.id.menu_add:
+                        mPages.get(mViewPager.getCurrentItem()).addData(0,new IObject(count++));
                         break;
-                    case R.id.menu_item2:
-                        Toast.makeText(CoordinatorLayoutDemoActivity.this,
-                                "menu_item2 is clicked",Toast.LENGTH_SHORT).show();
+                    case R.id.menu_delete:
+                        mPages.get(mViewPager.getCurrentItem()).deleteData(0);
+                        count--;
                         break;
                 }
                 return true;
