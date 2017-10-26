@@ -15,9 +15,6 @@ public class ColorfulStatusActivityDemo extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.id_toolbar);
         setSupportActionBar(toolbar);
-
-        StatusBarCompat.compat(this, getResources().getColor(R.color.colorPrimaryDark));
-//         StatusBarCompat.compat(this);
     }
 
 }
