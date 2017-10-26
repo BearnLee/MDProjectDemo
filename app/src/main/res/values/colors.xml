@@ -44,4 +44,9 @@
     <color name="material_blue_500">#009688</color>
     <color name="material_blue_700">#00796B</color>
     <color name="material_green_A200">#FD87A9</color>
+
+    <color name="accent_color">#3498db</color>
+    <color name="edit_text_bg_focus">#3498db</color>
+
+
 </resources>

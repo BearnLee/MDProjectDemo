@@ -1,30 +1,23 @@
 package com.ljs.coordinatorlayout_appbarlayout;
 
-import android.app.Activity;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
-import com.ljs.application.XApplication;
-import com.ljs.navigation.NavigationMainActivity;
-import com.ljs.sumery.IObject;
+import com.ljs.colorfulstatusbar.StatusBarCompat;
+import com.ljs.core.IObject;
 import com.ljs.sumery.R;
 import com.ljs.utils.SystemUtils;
 import com.ljs.utils.ToastManager;
@@ -58,6 +51,8 @@ public class CoordinatorLayoutDemoActivity extends AppCompatActivity{
         initView();
         initData();
         initAdapter();
+
+        StatusBarCompat.compat(this,getResources().getColor(R.color.colorPrimaryDark));
     }
 
     private void initAdapter() {

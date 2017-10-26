@@ -6,21 +6,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.ljs.sumery.IObject;
+import com.ljs.core.IObject;
 import com.ljs.sumery.R;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 
 /**
  * Created by 暮雨而歌 on 2017/10/16.
  */
 
 public class MyRecyclerViewAdpter extends RecyclerView.Adapter<MyRecyclerViewAdpter.MyViewHolder>{
-    private List<IObject> mList;
-    private OnItemClickListener mOnItemClickListener;
+    protected List<IObject> mList;
+    protected OnItemClickListener mOnItemClickListener;
     public MyRecyclerViewAdpter(List<IObject> list){
         this.mList = list;
     }

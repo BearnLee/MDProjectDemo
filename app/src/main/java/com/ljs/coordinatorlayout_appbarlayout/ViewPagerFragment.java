@@ -4,16 +4,13 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.ljs.recyclerview.DividerItemGridLayout;
-import com.ljs.recyclerview.DividerItemLinearLayoutDecoration;
-import com.ljs.sumery.IObject;
+import com.ljs.core.IObject;
 import com.ljs.recyclerview.MyRecyclerViewAdpter;
 import com.ljs.sumery.R;
 import com.ljs.utils.ToastManager;

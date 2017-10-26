@@ -1,0 +1,39 @@
+<!--
+  Copyright 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+    
+    <dimen name="title_height">52dp</dimen>
+    <dimen name="title_shadow">3dp</dimen>
+    
+    <dimen name="title_tab_height">52dp</dimen>
+    <dimen name="title_tab_content_top_margin">49dp</dimen>
+    <dimen name="title_tab_shadow_height">3dp</dimen>
+    
+    <dimen name="chat_avatar_size">40dp</dimen>
+    
+    <dimen name="info_item_padding">12dp</dimen>
+    <dimen name="info_item_detail_list_uitype_name_size">15sp</dimen>
+	<dimen name="info_item_fields_version2_padding_horizontal">13dp</dimen>
+	<dimen name="info_item_fields_version2_padding_vertical">10dp</dimen>
+	<dimen name="info_item_fields_dialog_margin_horizontal">14dp</dimen>
+    
+    <dimen name="locate_remote_view_image_size">36dp</dimen>
+    
+    <item name="multiline_spacingmultiplier" format="float" type="dimen">1.2</item>
+    
+    <dimen name="shadow_size">8dip</dimen>
+</resources>

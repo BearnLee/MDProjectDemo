@@ -1,4 +1,4 @@
-package com.ljs.sumery;
+package com.ljs.core;
 
 import java.io.Serializable;
 

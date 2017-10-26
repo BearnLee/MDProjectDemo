@@ -1,6 +1,5 @@
 package com.ljs.navigation;
 
-import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -17,7 +16,6 @@ import android.view.Window;
 import android.widget.Toast;
 
 import com.ljs.application.XApplication;
-import com.ljs.coordinatorlayout_appbarlayout.CoordinatorLayoutDemoActivity;
 import com.ljs.sumery.R;
 import com.ljs.utils.SystemUtils;
 
@@ -86,11 +84,11 @@ public class NavigationMainActivity extends AppCompatActivity{
 
                 switch (id){
                     case R.id.menu_add:
-                        Toast.makeText(XApplication.getContext(),
+                        Toast.makeText(XApplication.getApplication(),
                                 "menu_add is clicked",Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.menu_delete:
-                        Toast.makeText(XApplication.getContext(),
+                        Toast.makeText(XApplication.getApplication(),
                                 "menu_delete is clicked",Toast.LENGTH_SHORT).show();
                         break;
                 }

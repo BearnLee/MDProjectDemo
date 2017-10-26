@@ -46,7 +46,7 @@ public class ToastManager {
     private final Handler 	mHandler;
 
     private ToastManager(){
-        mContext = XApplication.getContext();
+        mContext = XApplication.getApplication();
         mHandler = new Handler(Looper.getMainLooper());
     }
 

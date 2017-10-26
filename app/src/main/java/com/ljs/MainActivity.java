@@ -5,7 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.ljs.bottomsheet.BottomSheetViewActivity;
+import com.ljs.collapsing_toolbarlayout.CollapsingToolbarLayoutActivityDemo;
+import com.ljs.colorfulstatusbar.ColorfulStatusActivityDemo;
 import com.ljs.coordinatorlayout_appbarlayout.CoordinatorLayoutDemoActivity;
+import com.ljs.edittextinput.LoginTextInputActivityDemo;
 import com.ljs.navigation.NavigationMainActivity;
 import com.ljs.sumery.R;
 import com.ljs.utils.SystemUtils;
@@ -15,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_select);
     }
 
     public void doClick(View view){
@@ -30,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.do_tab_layout:
                 SystemUtils.lauchActivity(this, CoordinatorLayoutDemoActivity.class);
+                break;
+            case R.id.do_collapsing_toolbar:
+                SystemUtils.lauchActivity(this, CollapsingToolbarLayoutActivityDemo.class);
+                break;
+            case R.id.do_text_input_layout:
+                SystemUtils.lauchActivity(this, LoginTextInputActivityDemo.class);
+                break;
+            case R.id.do_color_status_bar:
+                SystemUtils.lauchActivity(this, ColorfulStatusActivityDemo.class);
                 break;
         }
     }

@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ljs.sumery">
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <application
         android:name="com.ljs.application.XApplication"
         android:allowBackup="true"
@@ -9,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppBaseTheme">
+        android:theme="@style/AppTheme">
         <activity android:name="com.ljs.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -24,6 +25,12 @@
         <activity android:name="com.ljs.navigation.NavigationMainActivity"
             android:screenOrientation="portrait"/>
         <activity android:name="com.ljs.bottomsheet.BottomSheetViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ljs.collapsing_toolbarlayout.CollapsingToolbarLayoutActivityDemo"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ljs.edittextinput.LoginTextInputActivityDemo"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ljs.colorfulstatusbar.ColorfulStatusActivityDemo"
             android:screenOrientation="portrait"/>
     </application>
 

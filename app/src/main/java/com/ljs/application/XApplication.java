@@ -13,13 +13,21 @@ import android.view.WindowManager;
 public class XApplication extends Application{
     private static int mScreenWidth;
     private static int mScreenHeight;
-    private static Context instance;
+    private static XApplication sInstance;
+
+    public static XApplication getApplication(){
+        return sInstance;
+    }
+
+    public XApplication() {
+        sInstance = this;
+    }
 
     @Override
     public void onCreate() {
         super.onCreate();
 
-        instance = this;
+        sInstance = this;
         WindowManager windowManager = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
         DisplayMetrics dm = new DisplayMetrics();
         windowManager.getDefaultDisplay().getMetrics(dm);
@@ -33,9 +41,5 @@ public class XApplication extends Application{
 
     public static int getScreenHeight(){
         return mScreenHeight;
-    }
-
-    public static Context getContext(){
-        return instance;
     }
 }
