@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.ljs.sumery.R;
+import com.ljs.toolbar_manager.TranslucentStatusBarUtils;
 
 public class ColorfulStatusActivityDemo extends AppCompatActivity {
 
@@ -15,6 +16,9 @@ public class ColorfulStatusActivityDemo extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.id_toolbar);
         setSupportActionBar(toolbar);
+
+//        TranslucentStatusBarUtils.setStatusBarColor(this,R.color.color_red);
+        TranslucentStatusBarUtils.setStatusBarColor(this,getResources().getColor(R.color.colorAccent));
     }
 
 }

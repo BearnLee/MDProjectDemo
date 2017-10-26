@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.ljs.application.XApplication;
 import com.ljs.sumery.R;
+import com.ljs.toolbar_manager.TranslucentStatusBarUtils;
 import com.ljs.utils.SystemUtils;
 
 import afinal.FinalActivity;
@@ -46,6 +47,8 @@ public class NavigationMainActivity extends AppCompatActivity{
 
         initView();
         initToolBar();
+
+        TranslucentStatusBarUtils.setStatusBarColor(this,getResources().getColor(R.color.colorAccent));
     }
 
     private void initToolBar() {

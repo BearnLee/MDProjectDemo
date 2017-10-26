@@ -19,6 +19,7 @@ import android.view.View;
 import com.ljs.colorfulstatusbar.StatusBarCompat;
 import com.ljs.core.IObject;
 import com.ljs.sumery.R;
+import com.ljs.toolbar_manager.TranslucentStatusBarUtils;
 import com.ljs.utils.SystemUtils;
 import com.ljs.utils.ToastManager;
 
@@ -52,7 +53,7 @@ public class CoordinatorLayoutDemoActivity extends AppCompatActivity{
         initData();
         initAdapter();
 
-        StatusBarCompat.compat(this,getResources().getColor(R.color.colorPrimaryDark));
+        TranslucentStatusBarUtils.setStatusBarColor(this,getResources().getColor(R.color.colorAccent));
     }
 
     private void initAdapter() {
